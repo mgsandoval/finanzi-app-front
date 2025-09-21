@@ -2,9 +2,10 @@
 
 import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Dialog } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { Plus, Eye, Pencil } from 'lucide-react';
+import DetailsDialog from './details-dialog';
+import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 
 export default function InventoryPage() {
    return (
@@ -14,7 +15,7 @@ export default function InventoryPage() {
                <CardHeader>
                   <div className="w-full flex items-center justify-between">
                      <CardTitle className="text-xl font-bold">
-                     Inventario
+                        Inventario
                      </CardTitle>
                      <Button className='bg-sky-400 hover:bg-blue-400 text-black hover:text-white cursor-pointer transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105'>
                         <Plus />
@@ -29,7 +30,7 @@ export default function InventoryPage() {
                      <table className="w-full text-center border-collapse">
                         <thead>
                            <tr className="bg-gray-100">
-                              <th className="py-2 px-4 border text-sm md:text-base">Nombre</th>
+                              <th className="py-2 px-4 border text-sm md:text-base">Objeto</th>
                               <th className="py-2 px-4 border text-sm md:text-base">Cantidad</th>
                               <th className="py-2 px-4 border text-sm md:text-base"></th>
                            </tr>

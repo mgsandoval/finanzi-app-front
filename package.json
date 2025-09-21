@@ -6,6 +6,7 @@
     "dev": "next dev --turbopack -p 9000",
     "build": "next build --turbopack",
     "start": "next start",
+    "bs": "next build && next start",
     "lint": "eslint"
   },
   "dependencies": {
@@ -17,6 +18,7 @@
     "radix-ui": "^1.4.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",
+    "react-pro-sidebar": "^1.1.0",
     "tailwind-merge": "^3.3.1",
     "tailwindcss-animate": "^1.0.7"
   },

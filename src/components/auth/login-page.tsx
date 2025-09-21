@@ -1,17 +1,20 @@
 'use client';
 
 import React from 'react';
+import { useRouter } from 'next/navigation';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { LogIn } from 'lucide-react';
 
-const handleLogin = () => {
-   alert('Hola mundo!');
-}
-
 export default function Login() {
+   const router = useRouter();
+
+   const handleLogin = () => {
+      router.push('/finanzi');
+   }
+
    return (
       <div className='flex min-h-screen items-center justify-center bg-gradient-to-r from-[#0e4d90] via-[#3b82f6] to-[#1c56ca] p-4'>
          <Card className='w-full max-w-sm shadow-lg bg-white'>
@@ -49,7 +52,7 @@ export default function Login() {
             <CardFooter>
                <Button
                   className='w-full bg-emerald-400 hover:bg-green-400 text-black hover:text-white cursor-pointer transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105'
-                  onClick={ handleLogin }
+                  onClick={handleLogin}
                >
                   <LogIn className='ml-1 mr-1 h-4 w-4' />
                   <span className='sm:inline'>
