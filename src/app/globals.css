@@ -24,3 +24,27 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Estilo de los iconos de la sidebar */
+.sidebar-icon {
+  @apply flex items-center justify-center 
+         h-12 w-12 mt-2 mb-2 mx-auto 
+         bg-gray-200 dark:bg-gray-800 
+         text-gray-600 dark:text-gray-400 
+         hover:bg-indigo-500 dark:hover:bg-indigo-600 
+         hover:text-white rounded-2xl hover:rounded-xl 
+         transition-all duration-300 ease-linear cursor-pointer;
+}
+
+/* Línea divisoria */
+.sidebar-hr {
+  @apply bg-gray-300 dark:bg-gray-700 border-none rounded-full 
+         h-[1px] mx-2;
+}
+
+/* Tooltip */
+.sidebar-tooltip {
+  @apply whitespace-nowrap px-2 py-1 rounded-md shadow-md
+         text-white bg-gray-900 dark:bg-black
+         text-xs font-bold transition-all duration-200 scale-90;
+}
