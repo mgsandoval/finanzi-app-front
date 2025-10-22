@@ -28,13 +28,14 @@ export default function LandPage() {
                   </Button>
                </div>
             </main>
+            
             <footer className="text-white text-xs sm:text-sm opacity-70 py-4">
                <div>
                   © {new Date().getFullYear()}&nbsp;
                   <a href='https://github.com/mgsandoval' target='_blank'>
                      mgsandoval.
                   </a>
-                  Todos los derechos reservados.
+                  &nbsp;Todos los derechos reservados.
                </div>
             </footer>
          </div>

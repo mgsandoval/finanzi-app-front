@@ -26,19 +26,19 @@ export default function Navbar() {
           {/* Botones de navegación (desktop) */}
           <div className='hidden md:flex space-x-6'>
             <button
-              onClick={() => router.push('/finances')}
+              onClick={() => router.push('#finanzi')}
               className='text-white hover:text-blue-200 transition cursor-pointer'
             >
               Mis finanzas
             </button>
             <button
-              onClick={() => router.push('/inventory')}
+              onClick={() => router.push('#inventory')}
               className='text-white hover:text-blue-200 transition cursor-pointer'
             >
               Inventario
             </button>
             <button
-              onClick={() => router.push('/about')}
+              onClick={() => router.push('#about')}
               className='text-white hover:text-blue-200 transition cursor-pointer'
             >
               Sobre nosotros
